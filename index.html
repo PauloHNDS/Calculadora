@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="calculadora">
+        <div class="visor-fundo">
+            <div class="visor" id="visor">
+            
+            </div>
+        </div>
+        <div class="teclas">
+            <!--Primeira linha-->
+            <button id="sete" onclick="adicionarNumber('7')">7</button>
+            <button id="oito" onclick="adicionarNumber('8')">8</button>
+            <button id="nove" onclick="adicionarNumber('9')">9</button>
+            <button id="CE"  class="CE" onclick="limparVisor()">CE</button>
+            <!--terceira linha-->
+            <button id="quatro" onclick="adicionarNumber('4')">4</button>
+            <button id="cinco" onclick="adicionarNumber('5')">5</button>
+            <button id="seis" onclick="adicionarNumber('6')">6</button>
+            <button id="mais" class="conta" onclick="adicionarConta('+')">+</button>
+            <!--Quarta Linha-->
+            <button id="um" onclick="adicionarNumber('1')">1</button>
+            <button id="dois" onclick="adicionarNumber('2')">2</button>
+            <button id="tres" onclick="adicionarNumber('3')">3</button>
+            <button id="mais" class="conta" onclick="adicionarConta('/')">/</button>
+            <!--Quinta linha-->
+            <button id="mais" class="conta" onclick="adicionarConta('*')">*</button>
+            <button class="zero" onclick="adicionarVisor('0')">0</button>
+            <button id="mais" class="conta" onclick="adicionarConta('-')">-</button>
+            <button  class="conta" onclick="fazerConta()"> =</button>
+        </div>
+
+    </div>
+
+    <script src="./code.js"></script>
+    
+</body>
+</html>
